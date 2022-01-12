@@ -24,8 +24,10 @@ const tipCalculator = (value) =>{
         if(value=="custom" && !tip.value==""){
             value = value=="custom" ? tip.value/100 : value;
             tipAmount.innerHTML = (value*bill.value/people.value).toFixed(2);
+            total.innerHTML = ((parseFloat(bill.value)+parseFloat(tipAmount.innerHTML))/people.value).toFixed(2);
         }else if(value!="custom"){
             tipAmount.innerHTML = (value*bill.value/people.value).toFixed(2);
+            total.innerHTML = (parseFloat(bill.value/people.value)+parseFloat(tipAmount.innerHTML)).toFixed(2);
         }
     }
 
