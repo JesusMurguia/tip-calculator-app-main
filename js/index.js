@@ -23,9 +23,9 @@ const tipCalculator = (value) =>{
         error.classList.add('hidden');
         if(value=="custom" && !tip.value==""){
             value = value=="custom" ? tip.value/100 : value;
-            tipAmount.innerHTML = value*bill.value/people.value;
+            tipAmount.innerHTML = (value*bill.value/people.value).toFixed(2);
         }else if(value!="custom"){
-            tipAmount.innerHTML = value*bill.value/people.value;
+            tipAmount.innerHTML = (value*bill.value/people.value).toFixed(2);
         }
     }
 
