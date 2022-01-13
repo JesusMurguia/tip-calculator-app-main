@@ -65,6 +65,12 @@ h1{
     color: var(--very-dark-cyan);
 }
 
+#people{
+    background-color: var(--light-grayish-cyan-2);
+    background-image: url("../images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
 .bill-input:focus, .tip-input:focus{
     color: var(--very-dark-cyan);
     outline-color: transparent;
@@ -186,4 +192,16 @@ h1{
         padding:1em;
     }
     
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
